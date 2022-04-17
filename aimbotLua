@@ -31,6 +31,8 @@ function notification(title, text, duration)
 	})
 end
 
+notification("Aimbot", "Aimbot successfully loaded!", 5)
+
 uis.InputEnded:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.Q then
 		if mouse.Target and mouse.Target ~= nil and mouse.Target.Parent:FindFirstChild("Humanoid") then
